@@ -12,9 +12,7 @@
   09. SERVICES
   10. HIRE
   11. TESTIMONIALS
-  12. BLOG
   13. CONTACT
-  14. BLOG POST
   15. POST
 */
 
@@ -996,64 +994,6 @@ body {
 	font-weight: 600;
 }
 
-/* 12. BLOG
-=================================================*/
-
-#blog {
-	padding: 90px 0 95px;
-	background: #fff;
-}
-
-.blog-item {
-	width: 100%;
-	float: left;
-}
-
-.blog-item .blog-img {
-	width: 100%;
-	float: left;
-	overflow: hidden;
-	position: relative;
-	z-index: 1;
-	margin-top: 40px;
-	margin-bottom: 20px;
-}
-
-.blog-item .blog-img img {
-	position: relative;
-	max-width: 100%;
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: 0.9s;
-	-o-transition: 0.9s;
-	transition: 0.9s;
-}
-
-.blog-item .blog-desc h4 {
-	letter-spacing: 1px;
-	margin-bottom: 10px;
-}
-
-.blog-item .blog-desc h4 a {
-	color: #252525;
-	text-decoration: none;
-}
-
-.blog-item .blog-desc p {
-	margin-bottom: 15px;
-}
-
-.blog-item:hover .blog-img img {
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	transform: scale(1.2);
-}
-
 /* 13. CONTACT
 =================================================*/
 
@@ -1173,9 +1113,6 @@ fieldset {
 	border-radius: 4px;
 	margin-top: 30px;
 }
-
-/* 14. BLOG POST
-=================================================*/
 
 #header {
 	background-color: #777777;
@@ -1444,7 +1381,7 @@ fieldset {
 	margin-left:209px
 }
 
-.vtimeline-iconGameJam{
+.vtimeline-iconAlt{
 	position:relative;
 	color:#fff;
 	width:50px;
@@ -1456,7 +1393,7 @@ fieldset {
 	margin-left:209px
 }
 
-.vtimeline-iconGameJam i{
+.vtimeline-iconAlt i{
 	display:block;
 	font-size:2em;
 	margin-top:10px
@@ -1502,7 +1439,7 @@ fieldset {
 		margin-left:109.3px;
 	}
 
-	.vtimeline-iconGameJam{
+	.vtimeline-iconAlt{
 		position:relative;
 		color:#fff;
 		width:50px;
