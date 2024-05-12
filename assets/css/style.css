@@ -1322,12 +1322,12 @@ fieldset {
 	bottom:0;
 	left:233px;
 	right:auto;
-	height:100%;
+	height:88%;
 	width:3px;
-	background:linear-gradient(-50deg, #6B84F4, #6B84F4, #db6c34, #db6c34, #6B84F4);
+	background:linear-gradient(-50deg, #6B84F4, #6B84F4);
 	z-index:0
 }
-#experience-timeline:after{
+/* #experience-timeline:after{
 	position:absolute;
 	content:'';
 	width:3px;
@@ -1335,7 +1335,7 @@ fieldset {
 	background:linear-gradient(to bottom, #6B84F4, #6B84F400);
 	top:100%;
 	left:233px
-}
+} */
 .vtimeline-content{
 	margin-left:270px;
 	border:1px solid #e6e6e6;
