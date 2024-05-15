@@ -19,6 +19,9 @@
 
 	jQuery(document).ready(function () {
 
+		$(document).ready(function() {
+			$("#MyModal").modal();
+		  });
 
 		/* XX. PRELOADER
 		==================================================*/
@@ -128,7 +131,7 @@
 			disable: 'mobile'
 		});
 
-
+		
 
 	});
 
