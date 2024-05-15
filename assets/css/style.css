@@ -1549,3 +1549,23 @@ code {
 	 max-width:1200px;
 	}
   }
+
+  .myCarousel1{
+    background: none;
+    left: -15% !important;
+	background-image: none;
+	background-color: none;
+	color: rgb(0, 0, 0);
+	font-size: 70px;
+	align-content: center;
+}
+
+.myCarousel2{
+    background: none;
+    right: -15% !important;
+	background-image: none;
+	background-color: none;
+	color: rgb(0, 0, 0);
+	font-size: 70px;
+	align-content: center;
+}
