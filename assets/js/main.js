@@ -19,9 +19,17 @@
 
 	jQuery(document).ready(function () {
 
-		$(document).ready(function() {
-			$("#MyModal").modal();
-		  });
+		// $(document).ready(function () {
+		// 	$("#exampleModal").modal();
+		// });
+
+		// $('#exampleModal').on('shown.bs.modal', function () {
+		// 	$('#myInput').trigger('focus')
+		// })
+
+		$("#exampleModal").on('hidden.bs.modal', function (e) {
+			$("#exampleModal iframe").attr("src", $("#exampleModal iframe").attr("src"));
+		});
 
 		/* XX. PRELOADER
 		==================================================*/
@@ -131,7 +139,7 @@
 			disable: 'mobile'
 		});
 
-		
+
 
 	});
 

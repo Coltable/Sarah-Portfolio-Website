@@ -1512,3 +1512,40 @@ code {
 	display: block;
 	white-space: pre-wrap
 }
+
+.modal-content {
+	width:100%;
+  }
+  
+  .modal-dialog-centered {
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-align:center;
+	-ms-flex-align:center;
+	align-items:center;
+	min-height:calc(100% - (.5rem * 2));
+  }
+  
+  @media (min-width: 576px) {
+	.modal-dialog-centered {
+	  min-height:calc(100% - (1.75rem * 2));
+	}
+  }	
+
+  @media screen and (min-width: 768px) {
+	.modal-lg{
+		width:900px;
+	}
+  
+	.modal-sm{
+		width:300px;
+	}
+  }	
+
+  @media (min-width: 768px) {
+	.modal-xl {
+	  width: 90%;
+	 max-width:1200px;
+	}
+  }
