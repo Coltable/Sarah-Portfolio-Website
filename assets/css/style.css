@@ -64,12 +64,17 @@ p {
 
 /* 02. GENERAL
 =================================================*/
+* {
+    box-sizing: border-box;
+}
 
 body {
 	font-family: 'Lato', sans-serif;
 	line-height: 26px;
 	margin: 0;
 	padding: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .btn {
@@ -1513,7 +1518,7 @@ code {
 	white-space: pre-wrap
 }
 
-.modal-content {
+/* .modal-content {
 	width:100%;
   }
   
@@ -1548,9 +1553,9 @@ code {
 	  width: 90%;
 	 max-width:1200px;
 	}
-  }
+  } */
 
-.modal {
+/* .modal {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -1619,8 +1624,318 @@ code {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-}
+} */
   
-.nextarrow {
-	
+/* .modal-fullscreen */
+.modal-fullscreen {
+	background: transparent;
+  }
+  .modal-fullscreen .modal-content {
+	background: transparent;
+	border: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+  }
+  .modal-backdrop.modal-backdrop-fullscreen {
+	background: #ffffff;
+  }
+  .modal-backdrop.modal-backdrop-fullscreen.in {
+	opacity: .97;
+	filter: alpha(opacity=97);
+  }
+  /* .modal-fullscreen size: we use Bootstrap media query breakpoints */
+  .modal-fullscreen .modal-dialog {
+	margin: 0;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100%;
+	max-height: 100%;
+  }
+
+  @media (min-width: 768px) {
+	.modal-fullscreen .modal-dialog {
+	  width: 750px;
+	}
+  }
+  @media (min-width: 992px) {
+	.modal-fullscreen .modal-dialog {
+	  width: 970px;
+	}
+  }
+  @media (min-width: 1200px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 1170px;
+	}
+  }
+  @media (min-width: 1300px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 1270px;
+	}
+  }
+  @media (min-width: 1400px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 1370px;
+	}
+  }
+  @media (min-width: 1500px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 1470px;
+	}
+  }
+  @media (min-width: 1600px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 1570px;
+	}
+  }
+  @media (min-width: 1700px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 1670px;
+	}
+  }
+  @media (min-width: 1800px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 1770px;
+	}
+  }
+  @media (min-width: 1900px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 1870px;
+	}
+  }
+  @media (min-width: 2000px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 1970px;
+	}
+  }
+  @media (min-width: 2100px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 2070px;
+	}
+  }
+  @media (min-width: 2200px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 2170px;
+	}
+  }
+  @media (min-width: 2300px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 2270px;
+	}
+  }
+  @media (min-width: 2400px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 2370px;
+	}
+  }
+  @media (min-width: 2500px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 2470px;
+	}
+  }
+  @media (min-width: 2600px) {
+	.modal-fullscreen .modal-dialog {
+	   width: 2570px;
+	}
+  }
+
+  .imgtest {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+	width: auto;
+}
+
+input[type="radio"] {
+	display: none;
+  }
+  .js-slider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+  }
+  .js-slider_item {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding: 1rem 3rem;
+	opacity: 0;
+	visibility: hidden;
+	transform-origin: right center;
+	transform: translate3d(0%, 0%, 0) rotateY(30deg) scaleX(0.95);
+	transition: all 1s ease,transform 1s cubic-bezier(0.43, 0.28, 0.51, 1);
+  }
+  #s-1:checked ~ .js-slider .js-slider_item.img-1,
+  #s-2:checked ~ .js-slider .js-slider_item.img-2,
+  #s-3:checked ~ .js-slider .js-slider_item.img-3,
+  #s-4:checked ~ .js-slider .js-slider_item.img-4,
+  #s-5:checked ~ .js-slider .js-slider_item.img-5,
+  #s-6:checked ~ .js-slider .js-slider_item.img-6 {
+	opacity: 1;
+	visibility: visible;
+	transform-origin: left center;
+	transform: translate3d(0, 0, 0) rotateY(0deg) scaleX(1);
+  }
+  .js-slider_img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+  }
+  .c-img-w-full {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: auto;
+	transform: translate3d(-50%, -50%, 0);
+  }
+  .c-img-h-full {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: 100%;
+	transform: translate3d(-50%, -50%, 0);
+  }
+
+  .c-video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 70%;
+	height: 100%;
+	transform: translate3d(-50%, -50%, 0);
+  }
+
+  figcaption {
+	display: block;
+	width: 100%;
+  }
+  .wo-h3 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #000000;
+  }
+  .c-label {
+	display: inline-block;
+	color: #eee;
+	background-color: rgba(0, 0, 0, 0.9);
+	line-height: 1;
+	padding: 0.5em 0.9em;
+	margin-right: 0.5em;
+	font-size: 2.0rem;
+	font-weight: bold;
+  }
+  .view-sm {
+	display: none;
+  }
+  .js-slider_nav {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	transform: translate3d(0, -50%, 0);
+  }
+  .js-slider_nav_item.prev {
+	left: 250;
+  }
+  .js-slider_nav_item.next {
+	right: 250;
+	transform: rotateY(180deg);
+  }
+  .js-slider_nav_item {
+	position: absolute;
+	display: none;
+	width: 4rem;
+	height: 4rem;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .js-slider_nav_item:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 1rem;
+	top: 55%;
+	width: 1rem;
+	height: 1px;
+	background-color: #000000;
+	transform-origin: left bottom;
+	transform: translate3d(0, -50%, 0) rotate(-45deg);
+	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .js-slider_nav_item:hover {
+	 transform: translate3d(-30%, 0, 0);
+  }
+  .js-slider_nav_item.next:hover {
+	 transform: rotateY(180deg) translate3d(-30%, 0, 0);
+  }
+  .js-slider_nav_item:hover:before {
+	transform: translate3d(0, -50%, 0) rotate(-30deg);
+  }
+  .js-slider_nav_item:after {
+	content: "";
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	width: 2rem;
+	height: 1px;
+	background-color: #5a5a5a;
+	transform: translate3d(-50%, -50%, 0);
+  }
+  #s-1:checked ~ .js-slider .js-slider_nav .s-nav-1,
+  #s-2:checked ~ .js-slider .js-slider_nav .s-nav-2,
+  #s-3:checked ~ .js-slider .js-slider_nav .s-nav-3,
+  #s-4:checked ~ .js-slider .js-slider_nav .s-nav-4,
+  #s-5:checked ~ .js-slider .js-slider_nav .s-nav-5,
+  #s-6:checked ~ .js-slider .js-slider_nav .s-nav-6
+  {
+	display: block;
+  }
+  .js-slider_indicator {
+	position: absolute;
+	left: 0;
+	top: 75vh;
+	width: 100%;
+	text-align: center;
+  }
+  .js-slider-indi {
+	position: relative;
+	display: inline-block;
+	padding: 2rem;
+	cursor: pointer;
+  }
+  .js-slider-indi:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 1rem;
+	background: #000000;
+	transform: translate3d(-50%, -50%, 0);
+  }
+  .js-slider-indi:hover:after {
+	transform: translate3d(-50%, -50%, 0) scale(1.5);
+	transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  #s-1:checked ~ .js-slider .js-slider_indicator .indi-1:after,
+  #s-2:checked ~ .js-slider .js-slider_indicator .indi-2:after,
+  #s-3:checked ~ .js-slider .js-slider_indicator .indi-3:after,
+  #s-4:checked ~ .js-slider .js-slider_indicator .indi-4:after,
+  #s-5:checked ~ .js-slider .js-slider_indicator .indi-5:after,
+  #s-6:checked ~ .js-slider .js-slider_indicator .indi-6:after {
+	transform: translate3d(-50%, -50%, 0) scale(2.5);
+  }
+
+  .close {
+    color: #000000; 
+    opacity: 1;
 }

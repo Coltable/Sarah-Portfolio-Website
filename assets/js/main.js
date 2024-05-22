@@ -35,6 +35,15 @@
 			$("#exampleModal iframe").attr("src", $("#exampleModal iframe").attr("src"));
 		});	
 		
+		// .modal-backdrop classes
+$(".modal-fullscreen").on('show.bs.modal', function () {
+	setTimeout( function() {
+	  $(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+	}, 0);
+  });
+  $(".modal-fullscreen").on('hidden.bs.modal', function () {
+	$(".modal-backdrop").addClass("modal-backdrop-fullscreen");
+  });
 
 		/* XX. PRELOADER
 		==================================================*/
